@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/*==========================
+  Base Layout used unless
+  superceded by other styles
+  ==========================
+*/
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #ffffff;
+}
+
+.banner-txt {
+  position: absolute;
+  top:5px;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+body > header {
+  position: absolute;
+  text-align: center;
+  display: block;
+  padding-top: 33px;
+  width: 100%;
+
+	border-bottom: 2px solid #e8d0d0;
+  background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: left top;
+}
+
+body > header > nav ul li {
+	display: inline;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	color: #EFEFEF;
+}
+
+footer {
+  position: absolute;
+  box-shadow: 0px 52px 20px 15px rgba(0, 0, 0, 0.8);
+  top: 110%;
+  left: 15%;
+  right: 15%;
+}
+
+footer:hover{
+  filter:brightness(1.15)saturate(.80);
+}
+
+#banner {
+  color: #ffffff;
+  z-index: 10000001;
+  padding-bottom: 25px;
+  text-shadow: 1px 1px #000000;
+  background: linear-gradient(to right, transparent, red);
+  top: 0px;
+  left:0px;
+  height: 50px;
+}
+
+#banner-img {
+  z-index: 10000000;
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:75%;
+  height:110px;
+}
+
+#body-content {
+  position: absolute;
+  z-index: -10;
+  background-color: #ffffff;
+  top: 110px;
+  height: 100%;
+  left:15%;
+  right:15%;
+  box-shadow: 0px 0px 20px 15px rgba(0, 0, 0, 0.8);
+}
+
+#buy-button {
+  position:absolute;
+  border:2px solid #000000;
+  left:35%;
+  right:35%;
+  width:30%;
+  border-radius:15%;
+}
+
+#buy-button:hover {
+  filter: brightness(1.25);
+}
+
+#counting-tag {
+  margin-left: 35%;
+  margin-right: 35%;
+  color: #ffffff;
+  border:2px solid #000000;
+  background-color: #ff0000;
+  border-radius: 10%;
+}
+
+#countingdown {
+  font-size: 30px;
+}
+
+#countingdown-text {
+  margin-top: 0px;
+  font-size: 15px;
+}
+
+#yearbook-ad {
+  width: 50%;
+  height: 35%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#body-content > p {
+  position: static;
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#advertisements {
+  z-index: -100;
+  position:absolute;
+  top: 0px;
+  width: 15%;
+}
+
+.ad-left {
+  left:0%;
+}
+
+.ad-right {
+  left:85%;
+}
+
+.backgr{
+  top: 0;
+  left: 0;
+  z-index: -101;
+  position: fixed;
+  width: 100%;
+  height:100%;
+  background-color: #9f9f9f;
+}
+
+.sponsor-image {
+  border-color: black;
+  border-width: 2px;
+  border-style: dashed;
+  border-radius: 15%;
+}
+
+.sponsor-image:hover {
+  border-style: solid;
+}
+
+a {
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff0000;
+  text-shadow: 2px 2px #baa7a7;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-height: 800px) {
+
+#body-content {
+  height: 100%
+}
+
+}
+
+@media only screen and (max-width: 1080px) {
+
+#advertisements {
+  display:none;
+}
+
+.backgr {
+  display: none;
+}
+
+footer {
+  left:0%;
+  right:0%;
+  box-shadow: none;
+}
+
+#body-content {
+  top: 80px;
+  left:0%;
+  right:0%;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
+}
+
+}

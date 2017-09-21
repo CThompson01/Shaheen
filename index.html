@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yearbooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+  </head>
+  <body>
+    <div class="backgr">
+    </div>
+    <header id="banner">
+      <nav>
+        <ul>
+          <li><h1 horizontal-align="left" vertical-align="center">W e s t &nbsp;H i g h &nbsp;Y e a r b o o k &nbsp;P a g e</h1></li>
+        </ul>
+      </nav>
+    </header>
+    <img id="banner-img"src="images/falcons.png" alt="">
+    <br>
+    <div id="body-content">
+      <br>
+      <iframe id="yearbook-ad" width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI"></iframe>
+      <br>
+      <div id="counting-tag">
+        <h1 id="countingdown" align="center">Loading Countdown...</h1>
+        <h3 id="countingdown-text" align="center">Time Until Yearbooks Are No <br> Longer Available For Purchase</h3>
+      </div>
+      <br>
+      <a href="https://yearbookforever.com/#school/4022/2018" target="_blank">
+        <img id="buy-button" src="images/buyBut.png" alt="">
+      </a>
+
+    </div>
+    <div id="advertisements" class="ad-left">
+      <a href="http://www.powergrafxinc.net/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:80%; left:9%;" src="images/grafx.jpg" alt="Click Here to Visit Advertisers!"></a>
+      <a href="http://grindersspaghettihouse.com/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:160%; left:9%;" src="images/grinders.png" alt="Click Here to Visit Advertisers!"></a>
+      <a href="http://www.devotedimagery.com/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:240%; left:9%;" src="images/devotedimagery.png" alt="Click Here to Visit Advertisers!"></a>
+      <a href="http://www.quadcityspine.com/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:320%; left:9%;" src="images/qcspine.png" alt="Click Here to Visit Advertisers!"></a>
+      <a href="http://www.happyjoes.com/index.php" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:400%; left:9%;" src="images/happyjoes.jpeg" alt="Click Here to Visit Advertisers!"></a>
+    </div>
+    <div id="advertisements" class="ad-right">
+      <a href="http://www.photofrog.net/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:80%; left:9%;" src="images/photo-frog.png" alt="Click Here to Visit Advertisers!"></a>
+      <a href="http://www.ganzos.com/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:160%; left:9%;" src="images/ganzos.png" alt="Click Here to Visit Advertisers!"></a>
+      <a href="http://www.petersenplumbing.com/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:240%; left:9%;" src="images/petersen.png" alt="Click Here to Visit Advertisers!"></a>
+      <a href="https://www.google.com/search?biw=1440&bih=785&q=azteca%20restaurant%20logo%20davenport%20iowa&oq=azteca+restaurant+logo+davenport+iowa&gs_l=psy-ab.3..33i21k1.2319.4431.0.4586.15.13.0.0.0.0.354.2226.0j1j4j3.8.0....0...1.1.64.psy-ab..7.8.2225...0i22i30k1j33i22i29i30k1j33i160k1.0.6kGXkCppdVs&npsic=0&rflfq=1&rlha=0&rllag=41554463,-90584814,2270&tbm=lcl&rldimm=12377552464517207227&ved=0ahUKEwjaqa7U9bHWAhUk2oMKHadNDIoQvS4IUzAC&rldoc=1&tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9&safe=active&ssui=on#rlfi=hd:;si:12377552464517207227;mv:!1m3!1d19468.564123351145!2d-90.55039099999999!3d41.5563745!2m3!1f0!2f0!3f0!3m2!1i671!2i313!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:320%; left:9%;" src="images/azteca.jpeg" alt="Click Here to Visit Advertisers!"></a>
+      <a href="https://www.google.com/search?q=sandal%27s+tanning+davenport&source=lnms&sa=X&ved=0ahUKEwjhzfyV9rHWAhXr7IMKHTcVDMMQ_AUICSgA&biw=1440&bih=785&dpr=1&safe=active&ssui=on" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:400%; left:9%;" src="images/sandals.png" alt="Click Here to Visit Advertisers!"></a>
+    </div>
+    <a href="https://yearbookforever.com/#school/4022/2018">
+    <footer>
+      <img src="images/adver1.jpg" width=100%></img>
+    </footer>
+    </a>
+  </body>
+</html>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 30, 2018 0:0:01").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countingdown").innerHTML = days + "d :" + hours + "h :"
+  + minutes + "m :" + seconds + "s";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countingdown").innerHTML = "Offer Expired";
+  }
+}, 1000);
+</script>
+
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106757705-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106757705-1');
+</script>
